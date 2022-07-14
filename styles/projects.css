@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Life+Savers:wght@400;800&family=Press+Start+2P&display=swap');
+
+.projects__title{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 2.5px rgb(119, 119, 119);
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.projects__container{
+    margin: 0 5% 0 5%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.projects_card:nth-child(even){
+    margin-top: 88px
+}
+.projects_card:nth-child(odd){
+    margin-top: 0px
+}
+
+.projects_card{
+    margin-left: 5px;
+    width: 250px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px rgb(52, 52, 52);
+    opacity: .8;
+
+}
+
+.projects_card:hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(52, 52, 52);
+}
+
+.projects_card__image{
+    width: 250px;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card__title{
+    padding: 15px 0 0 15px;
+    font-family: 'Life Savers', cursive;
+    font-weight: 800;
+}
+
+.card__description{
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-family: 'Life Savers', cursive;
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    main{
+        height: 100%;
+    }
+    .projects__title{
+        font-size: 30px;
+    }
+    .projects__container{
+        margin: 25px 0 0 0;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 5px;
+        row-gap: 0px;
+        justify-items: center;
+    }
+    
+    .projects_card:nth-child(even){
+        margin-top: 100px
+    }
+    .projects_card:nth-child(odd){
+        margin-top: 0px
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    main{
+        height: 100%;
+    }
+    .projects__title{
+        font-size: 30px;
+    }
+    .projects__container{
+        margin: 25px 0 0 0;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 5px;
+        row-gap: 0px;
+        justify-items: center;
+    }
+    
+    .projects_card:nth-child(even){
+        margin-top: 100px
+    }
+    .projects_card:nth-child(odd){
+        margin-top: 0px
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+    .projects__title{
+        font-size: 30px;
+    }
+    .projects__container{
+        margin: 25px 0 0 0;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        column-gap: 5px;
+        row-gap: 20px;
+        align-items: center;
+    }
+    
+    .projects_card:nth-child(even){
+        margin-top: 0px
+    }
+    .projects_card:nth-child(odd){
+        margin-top: 0px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects__title{
+        font-size: 30px;
+    }
+    .projects__container{
+        margin: 25px 0 0 0;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        column-gap: 5px;
+        row-gap: 20px;
+        align-items: center;
+    }
+    
+    .projects_card:nth-child(even){
+        margin-top: 0px
+    }
+    .projects_card:nth-child(odd){
+        margin-top: 0px
+    }
+}
+
