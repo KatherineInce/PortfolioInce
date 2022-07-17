@@ -74,7 +74,7 @@ main{
     background-image: url(/images/circle-scatter-haikei.png);
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 94px);
+    height: calc(100vh - 95px);
     animation-name: backgroundMain; 
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
