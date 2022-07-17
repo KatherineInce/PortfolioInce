@@ -71,11 +71,60 @@ a i{
 }
 
 main{
-    background-color: #9b29ff;
+    background-image: url(/images/circle-scatter-haikei.png);
     background-size: cover;
     background-position: center;
     height: calc(100vh - 94px);
+    animation-name: backgroundMain; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 6s;
 }
+
+@keyframes backgroundMain{
+	0%{
+        background-image: url(/images/circle-scatter-haikei\ \(1\).png);
+	}
+	10%{
+        background-image: url(/images/circle-scatter-haikei\ \(2\).png);
+    }
+	20%{
+        background-image: url(/images/circle-scatter-haikei\ \(3\).png);
+
+	}
+    30%{
+        background-image: url(/images/circle-scatter-haikei\ \(4\).png);
+
+	}
+	40%{
+        background-image: url(/images/circle-scatter-haikei\ \(5\).png);
+
+	}
+	50%{
+        background-image: url(/images/circle-scatter-haikei\ \(6\).png);
+
+	}
+    60%{
+        background-image: url(/images/circle-scatter-haikei\ \(7\).png);
+
+	}
+	70%{
+        background-image: url(/images/circle-scatter-haikei\ \(8\).png);
+
+	}
+	80%{
+        background-image: url(/images/circle-scatter-haikei\ \(9\).png);
+
+	}
+    90%{
+        background-image: url(/images/circle-scatter-haikei\ \(10\).png);
+
+	}
+	100%{
+        background-image: url(/images/circle-scatter-haikei\ \(11\).png);
+	}
+}
+
 
 
 .main__content{
