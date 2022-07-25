@@ -9,8 +9,7 @@
 }
 
 .header{
-    /*height: 75px;*/
-    padding: 6px;
+    height: 75px;
     background-color: #ebebeb;
     display: flex;
     justify-content: space-between;
@@ -43,7 +42,7 @@
     font-size: xx-large;
 }
 
-.menu__mobile:hover{
+.menu__mobile i:hover{
     color:rgba(0, 195, 192);
     cursor: pointer;
 }
@@ -128,10 +127,11 @@ a i{
 }
 
 main{
+    margin-top: 75px;
     background-image: url(/images/circle-scatter-haikei.png);
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 20px);
+    min-height: calc(100vh - 100px);
     animation-name: backgroundMain; 
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -186,7 +186,7 @@ main{
 
 .main__content{
     width: 60%;
-    padding-top: 10%;
+    padding-top: 8%;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -252,12 +252,39 @@ p .emphasis3{
 
 footer{
     height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width:900px){
+@media screen and (min-width: 1000px) and (max-width:1300px){
+    .main__content__title .title1{
+        font-size: 60px;
+    }
+    
+    .main__content__title .title2{
+        font-size: 30px;
+    }
+    .main__content p{
+        font-size: 15px;
+    }
+    
+    p .emphasis1{
+        font-size: 13px;
+    }
+    
+    p .emphasis2{
+        font-size: 15px;
+    }
+    
+    p .emphasis3{
+        font-size:16px;
+    }
+    .main__content button{
+        padding:15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:1000px){
     .menu__mobile{
         display: flex;
         justify-content: end;
@@ -265,169 +292,112 @@ footer{
     .menu{
         display: none;
     }
-}
-
-/*@media screen and (min-width: 1100px) and (max-width:1350px){
-    .header__title{
-        width: 70%;
-    }
+    
     .main__content{
-        width: 60%;
-        padding-top: 10%;
-        margin-left: 20%;
-    }
-    
-    .main__content__title{
-        width: 80%;
-        padding-left: 10%;
-    }
-.main__content__title .title1{
-        font-size: 60px;
-    }
-    
-    .main__content__title .title2{
-        font-size: 30px;
-
-    }
-    
-}*/
-
-/*@media screen and (min-width: 800px) and (max-width:1100px){
-    main{
-        height: 100%;
-    }
-    .header__title{
-        width: 70%;
-    }
-    .main__content{
-        width: 70%;
-        padding-top: 10%;
-        margin-left: 15%;
-    }
-    
-    .main__content__title{
-        width: 90%;
-        padding-left: 10%;
-    }
-.main__content__title .title1{
-        font-size: 60px;
-    }
-    
-    .main__content__title .title2{
-        font-size: 30px;
-
-    }
-    
-}*/
-
-/*@media screen and (min-width: 500px) and (max-width:800px){
-    main{
-        height: 100%;
-    }
-    .menu{
-        display: none;
-    }
-    .menu__mobile{
-        display: block;
-    }
-    .header__title{
-        width: 70%;
-    }
-    .main__content{
-        width: 80%;
-        padding-top: 10%;
+        width: 85%;
+        padding-top: 15%;
         margin-left: 10%;
+        margin-right: 0;
     }
     
     .main__content__title{
-        width: 80%;
-        padding-left: 15%;
+        width: 85%;
+        padding-left: 10%;
+        margin-bottom: 30px;
     }
-    
     .main__content__title .title1{
-        font-size: 40px;
+        font-size: 55px;
     }
     
     .main__content__title .title2{
-        font-size: 20px;
-
+        font-size: 30px;
+    }
+    .main__content p{
+        font-size: 15px;
     }
     
-.main__content p{
-    text-align: justify;
-    font-size: 17px;
+    p .emphasis1{
+        font-size: 13px;
+    }
+    
+    p .emphasis2{
+        font-size: 15px;
+    }
+    
+    p .emphasis3{
+        font-size:16px;
+    }
+    .main__content button{
+        padding:10px;
+        font-size: 14px;
+    }
 }
 
-p .emphasis1{
-    font-size: 15px;
-}
-
-p .emphasis2{
-    font-size: 16px;
-}
-
-p .emphasis3{
-    font-size:18px;
-}
-
-.main__content button{
-    padding:14px;
-    font-size: 15px;
-}
-}*/
-
-/*@media screen and (max-width: 500px){
-    main{
-        height: 100%;
+@media screen and (min-width: 320px) and (max-width:700px){
+    .menu__mobile{
+        display: flex;
+        justify-content: end;
     }
     .menu{
         display: none;
     }
-    .menu__mobile{
-        display: block;
-    }
-    .header__title{
-        width: 70%;
-    }
+
     .main__content{
         width: 90%;
-        padding-top: 10%;
+        padding-top: 25%;
         margin-left: 5%;
+        margin-right: 0;
     }
     
     .main__content__title{
-        width: 100%;
-        padding-left: 0;
+        width: 90%;
+        padding-left: 5%;
+        margin-bottom: 30px;
     }
-    
+
     .main__content__title .title1{
-        font-size: 40px;
+        font-size: 45px;
     }
     
     .main__content__title .title2{
-        font-size: 20px;
+        font-size: 25px;
+    }
+    .main__content p{
+        font-size: 16px;
     }
     
-.main__content p{
-    text-align: justify;
-    font-size: 17px;
+    p .emphasis1{
+        font-size: 14px;
+    }
+    
+    p .emphasis2{
+        font-size: 15px;
+    }
+    
+    p .emphasis3{
+        font-size:17px;
+    }
+    .main__content button{
+        padding:10px;
+        font-size: 14px;
+    }
 }
 
-p .emphasis1{
-    font-size: 15px;
-}
+@media screen and (min-width: 320px) and (max-width:400px){
 
-p .emphasis2{
-    font-size: 16px;
+    .main__content{
+        width: 90%;
+        padding-top: 25%;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    
+    .main__content__title{
+        width: 95%;
+        padding-left: 2.5%;
+        margin-bottom: 30px;
+    }
+    .main__content__title .title2{
+        font-size: 20px;
+    }
 }
-
-p .emphasis3{
-    font-size:18px;
-}
-
-.main__content button{
-    padding:14px;
-    font-size: 15px;
-}
-}*/
-
