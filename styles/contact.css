@@ -16,6 +16,8 @@
 }
 
 .contact__form{
+    color: rgb(0,195,192);
+    font-weight: 700;
     width: 50%;
     padding: 0 10% 0 10%;
 }
