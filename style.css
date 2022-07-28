@@ -128,7 +128,7 @@ a i{
 
 main{
     margin-top: 75px;
-    background-image: url(/images/circle-scatter-haikei.png);
+    background-image: url(/images/circle.png);
     background-size: cover;
     background-position: center;
     min-height: calc(100vh - 100px);
@@ -140,45 +140,45 @@ main{
 
 @keyframes backgroundMain{
 	0%{
-        background-image: url(/images/circle-scatter-haikei\ \(1\).png);
+        background-image: url(/images/circle__1.png);
 	}
 	10%{
-        background-image: url(/images/circle-scatter-haikei\ \(2\).png);
+        background-image: url(/images/circle__2.png);
     }
 	20%{
-        background-image: url(/images/circle-scatter-haikei\ \(3\).png);
+        background-image: url(/images/circle__3.png);
 
 	}
     30%{
-        background-image: url(/images/circle-scatter-haikei\ \(4\).png);
+        background-image: url(/images/circle__4.png);
 
 	}
 	40%{
-        background-image: url(/images/circle-scatter-haikei\ \(5\).png);
+        background-image: url(/images/circle__5.png);
 
 	}
 	50%{
-        background-image: url(/images/circle-scatter-haikei\ \(6\).png);
+        background-image: url(/images/circle__6.png);
 
 	}
     60%{
-        background-image: url(/images/circle-scatter-haikei\ \(7\).png);
+        background-image: url(/images/circle__7.png);
 
 	}
 	70%{
-        background-image: url(/images/circle-scatter-haikei\ \(8\).png);
+        background-image: url(/images/circle__8.png);
 
 	}
 	80%{
-        background-image: url(/images/circle-scatter-haikei\ \(9\).png);
+        background-image: url(/images/circle__9.png);
 
 	}
     90%{
-        background-image: url(/images/circle-scatter-haikei\ \(10\).png);
+        background-image: url(/images/circle__10.png);
 
 	}
 	100%{
-        background-image: url(/images/circle-scatter-haikei\ \(11\).png);
+        background-image: url(/images/circle__11.png);
 	}
 }
 
@@ -255,7 +255,7 @@ footer{
     text-align: center;
 }
 .modal-body__contact{
-    background-image: url(/images/circle-scatter-haikei.png);
+    background-image: url(/images/circle.png);
     background-size: cover;
     background-position: center;
     color: rgb(0,195,192);
@@ -265,7 +265,7 @@ footer{
 .modal__contact__close{
     font-weight: 700;
     color: white;
-    background-image: url(/images/circle-scatter-haikei.png);
+    background-image: url(/images/circle.png);
     background-size: cover;
     background-position: center;
 }
