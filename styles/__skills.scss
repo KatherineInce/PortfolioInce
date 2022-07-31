@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Monofett&display=swap');
+
+$colorTitle1: rgb(0, 214, 210);
+$colorTitle2: #fff;
+$colorParagraph: #fff;
+$colorItems1: #fff;
+$colorTextItems1: #7300d8;
+$colorItems2: rgb(0, 214, 210);
+$colorTextItems2: #fff;
+$fontTitle1: 'Shrikhand', sans-serif;
+$fontTitle2: 'Monofett', cursive;
+
+@mixin titles($size,$color,$shadow,$font){
+    font-size: $size;
+    color: $color,;
+    text-shadow: $shadow;
+    font-family: $font;
+}
+
+@mixin item($background, $color, $border)
+{
+    background-color: $background;
+    color: $color;
+    border: $border;
+}
+
+.skills__container{
+    padding-top: 10%;
+}
+
+.skills__container__description p{
+    color:$colorParagraph;
+    text-align: justify;
+}
+
+.skills__title1{
+    @include titles(40px,$colorTitle1,2px 1px 2.5px $colorParagraph,$fontTitle1);
+}
+
+.skills__title2{
+    @include titles(30px,$colorTitle2,none,$fontTitle2);
+}
+
+.skills__item{
+    margin-bottom:10px;
+    padding: 30px 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px #333;
+}
+
+.skills__item:hover{
+    /*transform: scale(1.1);*/
+    animation-name: efecto; // el nombre de la animacion
+    animation-iteration-count: infinite; //cantidad de veces que quiero que se repita, -
+    animation-timing-function: ease-in; //tipo de efecto
+    animation-duration: 1.5s;  //duracion de la animacion
+
+}
+
+@keyframes efecto{
+	0%{
+		transform:rotateY(15deg);
+        transition: 0.8s;
+	}
+    10%{
+        transform:rotateY(30deg);
+        transition: 0.8s;
+    }
+    20%{
+        transform:rotateY(45deg);
+        transition: 0.8s;
+    }
+	30%{
+        transform:rotateY(60deg);
+        transition: 0.8s;
+    }
+    40%{
+        transform:rotateY(75deg);
+        transition: 0.8s;
+    }
+    50%{
+        transform:rotateY(90deg);
+        transition: 0.8s;
+    }
+}
+
+
+@for $i from 1 through 13 {
+    .item#{$i}{
+        @if $i%2 == 0 and $i <= 5{
+            @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+        }
+        @else if $i%2 != 0 and $i > 5 and $i <= 8{
+            @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+        }
+        @else if $i%2 == 0 and $i > 8{
+            @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+        }
+        @else{
+            @include item($colorItems1 , $colorTextItems1, none)
+        }
+    }
+}
+
+@media screen and (max-width:1400px) and (min-width: 1140px){
+    .skills__item{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width: 992px){
+    @for $i from 1 through 13 {
+        .item#{$i}{
+            @if $i%2 == 0 and $i <= 4{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else if $i%2 != 0 and( ($i > 4 and $i <= 8) or ($i == 13)){
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else if $i%2 == 0 and $i > 8{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else{
+                @include item($colorItems1 , $colorTextItems1, none)
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) and (min-width: 768px){
+    @for $i from 1 through 13 {
+        .item#{$i}{
+            @if $i%2 == 0 and $i <= 6{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else if $i%2 != 0 and $i > 6 and $i < 13{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else{
+                @include item($colorItems1 , $colorTextItems1, none)
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:576px){
+    @for $i from 1 through 13 {
+        .item#{$i}{
+            @if $i%2 == 0 and $i <= 4{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else if $i%2 != 0 and( ($i > 4 and $i <= 8) or ($i == 13)){
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else if $i%2 == 0 and $i > 8{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else{
+                @include item($colorItems1 , $colorTextItems1, none)
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    @for $i from 1 through 13 {
+        .item#{$i}{
+            @if $i%2 == 0{
+                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            }
+            @else{
+                @include item($colorItems1 , $colorTextItems1, none)
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) and (min-width: 320px){
+    .skills__title1{
+        font-size: 26px;
+    }
+    .skills__title2{
+        font-size: 24px;
+    }
+    .skills__container__description p{
+        font-size: 14px;
+    }
+}
+
+

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Life+Savers&display=swap');
+
+$colorTitle1: rgb(0, 214, 210);
+$fontTitle1: 'Bungee Inline', cursive;
+$colorList: rgb(244, 244, 244);
+$colorListHover: rgba(0, 195, 192);
+
+.cert__select{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom:30px;
+    select{
+        padding: 10px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    select:focus{
+        outline: none;
+    }
+}
+
+.cert__list{
+    font-size: 22px;
+    width: 100%;
+    background-color: $colorList;
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-indent: 30px;
+    padding: 10px;
+    font-family: 'Life Savers', cursive;
+    font-weight:200;
+    border: none;
+}
+
+.cert__list__collapse{
+    background-color: $colorList;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:0 0 10px 20px;
+}
+
+.cert__list:hover{
+    background-color:$colorListHover;
+    border: 1.5px solid #fff;
+    color: #fff; 
+}
+
+.cert__title1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: $colorTitle1;
+    font-family: $fontTitle1;
+}
+
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .cert__title1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:320px) {
+    .cert__title1{
+        font-size: 25px;
+    }
+    .cert__list{
+        font-size: 18px;
+        text-indent: 10px;
+
+    }
+    select{
+        font-size: 14px;
+    }
+}

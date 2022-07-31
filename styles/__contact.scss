@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Shrikhand&display=swap');
 
+$colorTitle1: rgb(0,195,192);
+$colorTitle2: white;
+$colorButton: rgb(0, 214, 210);
+$colorButtonShadow: rgb(235, 235, 235);
+$colorButtonHover: rgb(0,195,192);
+$colorButtonText: white;
+$colorInputHover: rgba(0, 195, 192, 0.612);
+$colorFormText: rgb(0,195,192);
+$fontTitle1: 'Shrikhand', cursive;
+$fontTitle2: 'Fredericka the Great', cursive;
+
 .contact__content{
     padding-top:10%;
     padding-bottom:2%;
@@ -9,14 +20,13 @@
 .contact__description{
     width: 50%;
     padding: 0 0 0 10%;
-}
-
-.contact__description p{
-    text-align: justify;
+    p{
+        text-align: justify;
+    }
 }
 
 .contact__form{
-    color: rgb(0,195,192);
+    color: $colorFormText;
     font-weight: 700;
     width: 50%;
     padding: 0 10% 0 10%;
@@ -24,36 +34,34 @@
 
 .contact__title1{
     margin-bottom: 20px;
-    color: rgb(0, 195, 192);
+    color: $colorTitle1;
     font-size: 45px;
-    font-family: 'Shrikhand', cursive;
-    
-
+    font-family: $fontTitle1;
 }
 
 .contact__title2{
     margin-bottom: 10px;
-    color: white;
+    color: $colorTitle2;
     font-size: 25px;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: $fontTitle2;
 }
 
 .contact__input{
     width: 100%;
     border-radius: 5px;
     border: none;
-    border-bottom: 2px solid rgb(0, 214, 210);
+    border-bottom: 2px solid $colorButton;
     height: 30px;
     margin-bottom: 10px;
 }
 
 .contact__input:hover{
-    border:2.5px solid rgba(0, 195, 192, 0.612);
+    border:2.5px solid $colorInputHover;
 }
 
 .contact__input:focus{
     outline: none;
-    border:2.5px solid rgba(0, 195, 192, 0.612);
+    border:2.5px solid $colorInputHover;
 }
 
 .contact__input--bigger{
@@ -68,19 +76,18 @@
     border-bottom-left-radius: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: rgb(0, 214, 210);
+    background-color: $colorButton;
     border: none;
-    color: #6a00c6;
-    box-shadow: 0 5px 1.5px rgb(235, 235, 235);
-    color:white;
+    box-shadow: 0 5px 1.5px $colorButtonShadow;
+    color:$colorButtonText;
 }
 
 .contact__button:active{
-    box-shadow: 0 1px 1.5px rgb(235, 235, 235);
-    background-color: rgb(0, 195, 192);
+    box-shadow: 0 1px 1.5px $colorButtonShadow;
+    background-color: $colorButtonHover;
 }
 .contact__button:hover{
-    background-color: rgb(0, 195, 192);
+    background-color: $colorButtonHover;
 }
 
 @media screen and (min-width: 800px) and (max-width:1111px){
