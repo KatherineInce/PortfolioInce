@@ -56,11 +56,15 @@ $fontTitle2: 'Fredericka the Great', cursive;
 }
 
 .contact__input:hover{
-    border:2.5px solid $colorInputHover;
+    @extend .borderHover;
 }
 
 .contact__input:focus{
     outline: none;
+    @extend .borderHover;
+}
+
+.borderHover{
     border:2.5px solid $colorInputHover;
 }
 

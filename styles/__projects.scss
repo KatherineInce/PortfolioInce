@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Life+Savers:wght@400;800&family=Press+Start+2P&display=swap');
 
-$fontCard: 'Life Savers', cursive;
-$colorTitle1: rgb(255, 255, 255);
-$fontTitle1: 'Press Start 2P', sans-serif;
+
+$styles:(
+    fontCard: ('Life Savers', cursive),
+    colorTitle1: rgb(255, 255, 255),
+    fontTitle1: ('Press Start 2P', sans-serif)
+);
+
 
 .projects__title{
     padding-top: 1%;
     text-align: center;
     font-size: 40px;
-    color: $colorTitle1;
+    color: map-get($styles,'colorTitle1');
     text-shadow: 2px 1px 2.5px rgb(119, 119, 119);
-    font-family: $fontTitle1;
+    font-family: map-get($styles,'fontTitle1');
 }
 
 .projects__container{
@@ -54,14 +58,14 @@ $fontTitle1: 'Press Start 2P', sans-serif;
 
 .card__title{
     padding: 15px 0 0 15px;
-    font-family: $fontCard;
+    font-family: map-get($styles,'fontCard');
     font-weight: 800;
 }
 
 .card__description{
     margin-top: 10px;
     padding: 5px 15px;
-    font-family: $fontCard;
+    font-family: map-get($styles,'fontCard');
     font-weight: 400;
 }
 

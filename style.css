@@ -1100,12 +1100,11 @@ footer {
   margin-bottom: 10px;
 }
 
-.contact__input:hover {
-  border: 2.5px solid rgba(0, 195, 192, 0.612);
-}
-
 .contact__input:focus {
   outline: none;
+}
+
+.borderHover, .contact__input:hover, .contact__input:focus {
   border: 2.5px solid rgba(0, 195, 192, 0.612);
 }
 
