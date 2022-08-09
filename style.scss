@@ -143,7 +143,19 @@ $heigthFooter: 20px;
 
 main{
     margin-top: 75px;
-    background-image: url(/images/circle.png);
+    background-image: url(/images/circle.png),
+    url(/images/circle__1.png),
+    url(/images/circle__2.png),
+    url(/images/circle__3.png),
+    url(/images/circle__4.png),
+    url(/images/circle__5.png),
+    url(/images/circle__6.png),
+    url(/images/circle__7.png),
+    url(/images/circle__8.png),
+    url(/images/circle__9.png),
+    url(/images/circle__10.png),
+    url(/images/circle__11.png);
+
     background-size: cover;
     background-position: center;
     min-height: $heigthMain;
