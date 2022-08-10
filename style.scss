@@ -88,6 +88,12 @@ $heigthFooter: 20px;
                 color:$aquaColor;
                 text-decoration: none;
             }
+            .active{
+                color:$aquaColor;
+                text-decoration: none;
+                font-size: 19px;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -138,6 +144,7 @@ $heigthFooter: 20px;
         i:hover{
             color:$aquaColor;
         }
+
     }
 }
 

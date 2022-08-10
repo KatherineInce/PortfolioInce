@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_ince",
+  "version": "1.0.0",
+  "description": "A portfolio, that includes skills, projects, contact, certification and an about page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatherineInce/PortfolioInce.git"
+  },
+  "keywords": [
+    "portfolio",
+    "cv",
+    "web",
+    "page"
+  ],
+  "author": "Katherine Ince",
+  "license": "ISC",
+  "homepage": "https://portfolio-ince.netlify.app/index.html",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

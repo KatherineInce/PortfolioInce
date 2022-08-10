@@ -72,6 +72,12 @@
   color: rgb(0, 195, 192);
   text-decoration: none;
 }
+.menu ul li .active {
+  color: rgb(0, 195, 192);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+}
 
 .menu--separator {
   border-right: 2px solid #000000;
