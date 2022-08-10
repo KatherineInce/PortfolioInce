@@ -121,6 +121,14 @@ $heigthFooter: 20px;
     margin-left: 14px;
 }
 
+.nav-item--active{
+    border-radius: 10px;
+    background-color:$aquaColor;
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .nav-item:hover{
     border-radius: 10px;
     background-color:$purpleColor;
