@@ -1036,7 +1036,7 @@ footer {
   background-color: rgb(244, 244, 244);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding: 0 0 10px 20px;
+  padding: 20px;
 }
 
 .cert__list:hover {

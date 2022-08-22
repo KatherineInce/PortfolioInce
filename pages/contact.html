@@ -91,8 +91,23 @@
                 <br>
                 <textarea class="contact__input contact__input--bigger" name="message" cols="30" rows="10"></textarea>
                 <br>
-                <input class="contact__button" type="submit" value="Contact Me">
+                <input class="contact__button" type="button" value="Contact Me" data-bs-target="#contactModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">
             </form>
+            <!-- bootstrap modal -->
+            <div class="modal fade" id="contactModalToggle3" aria-hidden="true" aria-labelledby="contactModalToggle3Label" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-1">
+                  <div class="modal-header modal__contact__close">
+                    <h5 class="modal-title" id="contactModalToggle3Label">Thanks!</h5>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    The message was send
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bootstrap modal -->
           </section>
         </div>
       </main>
