@@ -33,7 +33,7 @@
               <li class="menu--separator"><a href="pages/skills.html">Skills</a></li>
               <li class="menu--separator"><a href="pages/projects.html">Projects</a></li>
               <li class="menu--separator"><a href="pages/certifications.html">Certifications</a></li>
-              <li class="menu--separator"><a href="pages/contact.html">Contact</a></li>
+              <!-- <li class="menu--separator"><a href="pages/contact.html">Contact</a></li> -->
               <li><a href="https://github.com/KatherineInce" target="_blank"><i class="fa-brands fa-github"></i>
               </a></li>
               <li><a href="https://www.linkedin.com/in/katherine-ince-f/" target="_blank"><i class="fa-brands fa-linkedin" target="_blank"></i></a></li>
@@ -70,21 +70,23 @@
 
       </header>
       <main>
+      <div class="content-wrapper">
         <div class="main__content">
           <div class="main__content__title">
             <div class="title1">You've found</div>
             <div class="title2">your Frontend Developer</div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="emphasis3">Explicabo</span> ad natus suscipit praesentium. Architecto, quod? <span class="emphasis1">
-            Quaerat optio labore alias accusamus?
-          </span>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="emphasis3">Doloribus</span> laborum suscipit impedit exercitationem quaerat vel praesentium, quis minus? Ut tempore quae numquam quasi maxime nulla aliquid at iusto, <span class="emphasis2">expedita nisi ipsum voluptates repellat sit!</span> Odit nesciunt obcaecati voluptates modi distinctio ea <span class="emphasis1">nihil repudiandae pariatur eaque libero quia ratione</span>, optio alias?
-          </p>
+          <p><span class="emphasis3">Welcome to my portfolio!</span> With over <span class="emphasis1">7 years</span> of experience in crafting modern, dynamic applications and systems, 
+            <span class="emphasis2">I'm passionate about creating seamless user experiences and innovative solutions.</span> From optimizing performance 
+            with cutting-edge technologies like JavaScript and React to leading teams in a collaborative, distributed environment, I thrive on tackling 
+            new challenges and driving impactful results. Explore my work to see how I can help bring your vision to life and elevate your next project.
+            <span class="emphasis3">Let's build something great together!</span></p>
           <div class="main__content__button">
-            <button data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button>
+            <!-- <button data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</button> -->
+            <button onclick="window.location.href='mailto:katherine.ince0390@outlook.com?subject=Exciting Career Opportunity: [Job Title] at [Company]';">Contact Me</button>
           </div>
           <!-- bootstrap modal -->
-          <div class="modal fade" data-bs-backdrop="static" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+          <!-- <div class="modal fade" data-bs-backdrop="static" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -125,10 +127,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- bootstrap modal -->
         </div>
+      </div>
+        
       </main>
-      <footer><p>&copy;2022 Katherine Ince</p></footer>
+      <footer class="fixed-bottom"><p>&copy;2024 Katherine Ince</p></footer>
 </body>
 </html>

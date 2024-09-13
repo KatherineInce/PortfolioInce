@@ -9,7 +9,7 @@ $colorItems2: rgb(0, 214, 210);
 $colorTextItems2: #fff;
 $fontTitle1: 'Shrikhand', sans-serif;
 $fontTitle2: 'Monofett', cursive;
-
+$star-color:rgb(0, 214, 210);
 @mixin titles($size,$color,$shadow,$font){
     font-size: $size;
     color: $color,;
@@ -32,7 +32,24 @@ $fontTitle2: 'Monofett', cursive;
     color:$colorParagraph;
     text-align: justify;
 }
+.skills__container__description ul{
+    color:$colorParagraph;
+    list-style: none; 
 
+    li {
+        position: relative; 
+        
+        &:before {
+        content: '\2605'; 
+        color: $star-color; 
+        font-size: 1.5em; 
+        position: absolute;
+        left: -20px; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        }
+    }
+}
 .skills__title1{
     @include titles(40px,$colorTitle1,2px 1px 2.5px $colorParagraph,$fontTitle1);
 }

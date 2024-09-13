@@ -8,7 +8,7 @@ $whiteColor: #ebebeb;
 $fontTitle1: 'Lobster', cursive;
 $fontTitle2: 'Permanent Marker', cursive;
 $fontHeader: 'Satisfy',cursive;
-$heigthMain: calc(100vh - 100px);
+$heigthMain: 100vh;
 $heigthHeader: 75px;
 $heigthFooter: 20px;
 
@@ -157,7 +157,7 @@ $heigthFooter: 20px;
 }
 
 main{
-    margin-top: 75px;
+    // margin-top: 75px;
     background-image: url(/images/circle.png),
     url(/images/circle__1.png),
     url(/images/circle__2.png),
@@ -178,6 +178,7 @@ main{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 6s;
+
 }
 
 @keyframes backgroundMain{
@@ -223,15 +224,26 @@ main{
         background-image: url(/images/circle__11.png);
 	}
 }
-
+.content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 .main__content{
     width: 60%;
-    padding-top: 8%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 75px;
+    height: fit-content;
+    // margin-top: 75px;
+    // padding-top: 5%;
+    // margin-left: 20%;
+    // margin-right: 20%;
     p{
         text-align: justify;
         font-size: 18px;
+        // padding: 0px 20px;
+        // border-radius: 10px;
+        // background-color: #ffffff59;
         .emphasis1{
             font-size: 16px;
             font-style: italic;
@@ -280,8 +292,14 @@ main{
 }
 
 footer{
-    height: 20px;
-    text-align: center;
+    background-color: $whiteColor;
+    p{
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin: 0px;
+    }
+    
 }
 
 .modal-body__contact{
