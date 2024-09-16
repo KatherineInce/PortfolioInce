@@ -135,7 +135,7 @@
   color: rgb(0, 195, 192);
 }
 
-main {
+body {
   background-image: url(/images/circle.png), url(/images/circle__1.png), url(/images/circle__2.png), url(/images/circle__3.png), url(/images/circle__4.png), url(/images/circle__5.png), url(/images/circle__6.png), url(/images/circle__7.png), url(/images/circle__8.png), url(/images/circle__9.png), url(/images/circle__10.png), url(/images/circle__11.png);
   background-size: cover;
   background-position: center;
@@ -742,19 +742,24 @@ footer p {
   font-weight: 400;
 }
 
+@media screen and (max-width: 1200px) {
+  .projects__container {
+    padding-bottom: 50px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .projects__title {
     font-size: 30px;
   }
   .projects__container {
-    margin: 25px 0 0 0;
+    margin: 25px 0 0px 0;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5px;
     row-gap: 0px;
     justify-items: center;
   }
   .projects_card:nth-child(even) {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .projects_card:nth-child(odd) {
     margin-top: 0px;
@@ -764,11 +769,14 @@ footer p {
   .projects__title {
     font-size: 30px;
   }
+  .projects_card {
+    margin-top: 0px !important;
+  }
   .projects__container {
     margin: 25px 0 0 0;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
-    row-gap: 0px;
+    row-gap: 20px;
     justify-items: center;
   }
   .projects_card:nth-child(even) {

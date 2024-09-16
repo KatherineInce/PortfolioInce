@@ -21,9 +21,9 @@ $styles:(
 
 .projects__container{
     margin: 0 5% 0 5%;
+
     align-items: flex-start !important;
     justify-content: center;
-    // padding-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     column-gap: 5px;
@@ -87,12 +87,18 @@ $styles:(
     font-weight: 400;
 }
 
+@media screen and (max-width:1200px){
+    .projects__container{
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1400px){
     .projects__title{
         font-size: 30px;
     }
     .projects__container{
-        margin: 25px 0 0 0;
+        margin: 25px 0 0px 0;
         grid-template-columns: repeat(4,1fr);
         column-gap: 5px;
         row-gap: 0px;
@@ -100,7 +106,7 @@ $styles:(
     }
     
     .projects_card:nth-child(even){
-        margin-top: 100px
+        margin-top: 80px
     }
     .projects_card:nth-child(odd){
         margin-top: 0px
@@ -111,11 +117,14 @@ $styles:(
     .projects__title{
         font-size: 30px;
     }
+    .projects_card{
+        margin-top: 0px !important;
+    }
     .projects__container{
         margin: 25px 0 0 0;
         grid-template-columns: repeat(3,1fr);
         column-gap: 5px;
-        row-gap: 0px;
+        row-gap: 20px;
         justify-items: center;
     }
     
