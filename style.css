@@ -870,6 +870,9 @@ footer p {
   border-bottom-right-radius: 5px;
   padding: 20px;
 }
+.cert__list__collapse h5 a {
+  word-wrap: break-word;
+}
 
 .cert__list:hover {
   background-color: rgb(0, 195, 192);

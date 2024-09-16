@@ -46,6 +46,11 @@ $colorListHover: rgba(0, 195, 192);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding:20px;
+    h5{
+        a{
+            word-wrap: break-word;
+        }
+    }
 }
 
 .cert__list:hover{
