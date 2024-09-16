@@ -25,7 +25,7 @@ $star-color:rgb(0, 214, 210);
 }
 
 .skills__container{
-    padding-top: 75px;
+    padding-top: 10%;
 }
 .skills-spheres{
     margin-top: 50px;
@@ -135,6 +135,11 @@ $star-color:rgb(0, 214, 210);
 @media screen and (max-width:1400px) and (min-width: 1140px){
     .skills__item{
         font-size: 11px;
+    }
+}
+@media screen and (max-width:900px){
+    .skills__container{
+        padding-top: 100px;
     }
 }
 @media screen and (max-width:499px) {
