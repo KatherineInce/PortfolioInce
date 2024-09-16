@@ -25,9 +25,19 @@ $star-color:rgb(0, 214, 210);
 }
 
 .skills__container{
-    padding-top: 10%;
+    padding-top: 75px;
 }
-
+.skills-spheres{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    column-gap: 20px;
+    grid-template-areas: 
+        "item1 item2 item3 item4 item5"
+        " . item6 item7 item8 ."
+        "item9 item10 item11 item12 item13";
+}
 .skills__container__description p{
     color:$colorParagraph;
     text-align: justify;
@@ -38,7 +48,6 @@ $star-color:rgb(0, 214, 210);
 
     li {
         position: relative; 
-        
         &:before {
         content: '\2605'; 
         color: $star-color; 
@@ -107,17 +116,18 @@ $star-color:rgb(0, 214, 210);
 
 @for $i from 1 through 13 {
     .item#{$i}{
+        grid-area: item#{$i};
         @if $i%2 == 0 and $i <= 5{
-            @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            @include item($colorItems2 , $colorTextItems2, 2px solid #fff);
         }
         @else if $i%2 != 0 and $i > 5 and $i <= 8{
-            @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            @include item($colorItems2 , $colorTextItems2, 2px solid #fff);
         }
         @else if $i%2 == 0 and $i > 8{
-            @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+            @include item($colorItems2 , $colorTextItems2, 2px solid #fff);
         }
         @else{
-            @include item($colorItems1 , $colorTextItems1, none)
+            @include item($colorItems1 , $colorTextItems1, none);
         }
     }
 }
@@ -127,73 +137,86 @@ $star-color:rgb(0, 214, 210);
         font-size: 11px;
     }
 }
-
-@media screen and (max-width:1200px) and (min-width: 992px){
-    @for $i from 1 through 13 {
-        .item#{$i}{
-            @if $i%2 == 0 and $i <= 4{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else if $i%2 != 0 and( ($i > 4 and $i <= 8) or ($i == 13)){
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else if $i%2 == 0 and $i > 8{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else{
-                @include item($colorItems1 , $colorTextItems1, none)
-            }
-        }
+@media screen and (max-width:499px) {
+    .skills-spheres{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin-bottom: 50px;
+        .skills__item{
+           border-radius: 5px;
+           padding: 2px;
+        }       
     }
 }
+// @media screen and (max-width:1200px) and (min-width: 992px){
+//     @for $i from 1 through 13 {
+//         .item#{$i}{
+//             @if $i%2 == 0 and $i <= 4{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else if $i%2 != 0 and( ($i > 4 and $i <= 8) or ($i == 13)){
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else if $i%2 == 0 and $i > 8{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else{
+//                 @include item($colorItems1 , $colorTextItems1, none)
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width:992px) and (min-width: 768px){
-    @for $i from 1 through 13 {
-        .item#{$i}{
-            @if $i%2 == 0 and $i <= 6{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else if $i%2 != 0 and $i > 6 and $i < 13{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else{
-                @include item($colorItems1 , $colorTextItems1, none)
-            }
-        }
-    }
-}
+// @media screen and (max-width:992px) and (min-width: 768px){
+//     @for $i from 1 through 13 {
+//         .item#{$i}{
+//             @if $i%2 == 0 and $i <= 6{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else if $i%2 != 0 and $i > 6 and $i < 13{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else{
+//                 @include item($colorItems1 , $colorTextItems1, none)
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width:768px) and (min-width:576px){
-    @for $i from 1 through 13 {
-        .item#{$i}{
-            @if $i%2 == 0 and $i <= 4{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else if $i%2 != 0 and( ($i > 4 and $i <= 8) or ($i == 13)){
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else if $i%2 == 0 and $i > 8{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else{
-                @include item($colorItems1 , $colorTextItems1, none)
-            }
-        }
-    }
-}
+// @media screen and (max-width:768px) and (min-width:576px){
+//     @for $i from 1 through 13 {
+//         .item#{$i}{
+//             @if $i%2 == 0 and $i <= 4{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else if $i%2 != 0 and( ($i > 4 and $i <= 8) or ($i == 13)){
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else if $i%2 == 0 and $i > 8{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else{
+//                 @include item($colorItems1 , $colorTextItems1, none)
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width:576px){
-    @for $i from 1 through 13 {
-        .item#{$i}{
-            @if $i%2 == 0{
-                @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
-            }
-            @else{
-                @include item($colorItems1 , $colorTextItems1, none)
-            }
-        }
-    }
-}
+// @media screen and (max-width:576px){
+//     @for $i from 1 through 13 {
+//         .item#{$i}{
+//             @if $i%2 == 0{
+//                 @include item($colorItems2 , $colorTextItems2, 2px solid #fff)
+//             }
+//             @else{
+//                 @include item($colorItems1 , $colorTextItems1, none)
+//             }
+//         }
+//     }
+// }
 
 @media screen and (max-width:450px) and (min-width: 320px){
     .skills__title1{

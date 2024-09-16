@@ -18,7 +18,15 @@ $colorListHover: rgba(0, 195, 192);
         outline: none;
     }
 }
-
+.cert{
+    display: none;
+}
+.cert-show{
+    display: block;
+}
+.cert__wrapper{
+    padding-bottom: 20px;
+}
 .cert__list{
     font-size: 22px;
     width: 100%;
@@ -49,9 +57,12 @@ $colorListHover: rgba(0, 195, 192);
 .cert__title1{
     text-align: center;
     font-size: 40px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     color: $colorTitle1;
     font-family: $fontTitle1;
+}
+.certifications-wrapper{
+    margin-top: 75px;
 }
 
 @media screen and (max-width: 992px) and (min-width:768px) {

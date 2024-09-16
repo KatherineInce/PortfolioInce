@@ -340,8 +340,7 @@ footer p {
   }
   .main__content {
     width: 85%;
-    padding-top: 15%;
-    margin-left: 10%;
+    padding-top: 5%;
     margin-right: 0;
   }
   .main__content p {
@@ -390,8 +389,6 @@ footer p {
   }
   .main__content {
     width: 90%;
-    padding-top: 25%;
-    margin-left: 5%;
     margin-right: 0;
   }
   .main__content p {
@@ -432,8 +429,6 @@ footer p {
 @media screen and (min-width: 320px) and (max-width: 400px) {
   .main__content {
     width: 90%;
-    padding-top: 25%;
-    margin-left: 5%;
     margin-right: 0;
   }
   .main__content__title {
@@ -449,7 +444,16 @@ footer p {
   }
 }
 .skills__container {
-  padding-top: 10%;
+  padding-top: 75px;
+}
+
+.skills-spheres {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  column-gap: 20px;
+  grid-template-areas: "item1 item2 item3 item4 item5" " . item6 item7 item8 ." "item9 item10 item11 item12 item13";
 }
 
 .skills__container__description p {
@@ -533,78 +537,91 @@ footer p {
   }
 }
 .item1 {
+  grid-area: item1;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item2 {
+  grid-area: item2;
   background-color: rgb(0, 214, 210);
   color: #fff;
   border: 2px solid #fff;
 }
 
 .item3 {
+  grid-area: item3;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item4 {
+  grid-area: item4;
   background-color: rgb(0, 214, 210);
   color: #fff;
   border: 2px solid #fff;
 }
 
 .item5 {
+  grid-area: item5;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item6 {
+  grid-area: item6;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item7 {
+  grid-area: item7;
   background-color: rgb(0, 214, 210);
   color: #fff;
   border: 2px solid #fff;
 }
 
 .item8 {
+  grid-area: item8;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item9 {
+  grid-area: item9;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item10 {
+  grid-area: item10;
   background-color: rgb(0, 214, 210);
   color: #fff;
   border: 2px solid #fff;
 }
 
 .item11 {
+  grid-area: item11;
   background-color: #fff;
   color: #7300d8;
   border: none;
 }
 
 .item12 {
+  grid-area: item12;
   background-color: rgb(0, 214, 210);
   color: #fff;
   border: 2px solid #fff;
 }
 
 .item13 {
+  grid-area: item13;
   background-color: #fff;
   color: #7300d8;
   border: none;
@@ -615,272 +632,18 @@ footer p {
     font-size: 11px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-  .item1 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
+@media screen and (max-width: 499px) {
+  .skills-spheres {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 50px;
   }
-  .item2 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item3 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item4 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item5 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item6 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item7 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item8 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item9 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item10 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item11 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item12 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item13 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-}
-@media screen and (max-width: 992px) and (min-width: 768px) {
-  .item1 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item2 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item3 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item4 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item5 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item6 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item7 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item8 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item9 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item10 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item11 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item12 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item13 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-}
-@media screen and (max-width: 768px) and (min-width: 576px) {
-  .item1 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item2 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item3 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item4 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item5 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item6 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item7 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item8 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item9 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item10 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item11 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item12 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item13 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-}
-@media screen and (max-width: 576px) {
-  .item1 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item2 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item3 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item4 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item5 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item6 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item7 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item8 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item9 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item10 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item11 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
-  }
-  .item12 {
-    background-color: rgb(0, 214, 210);
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .item13 {
-    background-color: #fff;
-    color: #7300d8;
-    border: none;
+  .skills-spheres .skills__item {
+    border-radius: 5px;
+    padding: 2px;
   }
 }
 @media screen and (max-width: 450px) and (min-width: 320px) {
@@ -894,8 +657,12 @@ footer p {
     font-size: 14px;
   }
 }
+.projects-wrapper {
+  padding-top: 75px;
+}
+
 .projects__title {
-  padding-top: 1%;
+  padding: 1% 0px;
   text-align: center;
   font-size: 40px;
   color: rgb(255, 255, 255);
@@ -905,7 +672,8 @@ footer p {
 
 .projects__container {
   margin: 0 5% 0 5%;
-  padding-bottom: 20px;
+  align-items: flex-start !important;
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 5px;
@@ -914,14 +682,17 @@ footer p {
 }
 
 .projects_card:nth-child(even) {
-  margin-top: 88px;
+  margin-top: 25px;
 }
 
 .projects_card:nth-child(odd) {
-  margin-top: 0px;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
 }
 
 .projects_card {
+  text-decoration: none;
+  color: black;
   margin-left: 5px;
   width: 250px;
   background-color: #ebebeb;
@@ -932,26 +703,36 @@ footer p {
 
 .projects_card:hover {
   opacity: 1;
+  color: black;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgb(52, 52, 52);
+  box-shadow: 5px 5px 5px rgba(0, 77, 77, 0.651);
+}
+.projects_card:hover .card__title {
+  color: #ebebeb;
+  background-color: rgb(0, 124, 124);
 }
 
 .projects_card__image {
   width: 250px;
   height: 180px;
+  border-bottom: 5px solid rgb(0, 124, 124);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .card__title {
-  padding: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 15px;
+  margin: 0px;
   font-family: "Life Savers", cursive;
   font-weight: 800;
 }
 
 .card__description {
-  margin-top: 10px;
   padding: 5px 15px;
+  margin: 0px !important;
+  height: 226px;
   font-family: "Life Savers", cursive;
   font-weight: 400;
 }
@@ -1044,6 +825,18 @@ footer p {
   outline: none;
 }
 
+.cert {
+  display: none;
+}
+
+.cert-show {
+  display: block;
+}
+
+.cert__wrapper {
+  padding-bottom: 20px;
+}
+
 .cert__list {
   font-size: 22px;
   width: 100%;
@@ -1074,9 +867,12 @@ footer p {
 .cert__title1 {
   text-align: center;
   font-size: 40px;
-  margin-bottom: 20px;
   color: rgb(0, 214, 210);
   font-family: "Bungee Inline", cursive;
+}
+
+.certifications-wrapper {
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
